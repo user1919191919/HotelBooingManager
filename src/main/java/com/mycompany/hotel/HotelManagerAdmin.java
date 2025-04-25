@@ -801,31 +801,3 @@ public class HotelManagerAdmin extends javax.swing.JFrame {
 
 
 
-
-
- 
-
-/*try {                                                                                                  //qq                   
-        
-         Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/beksultanfinal", // исправлено "jdbc"
-                "postgres", // логин
-                "postgres"  // пароль
-            );
-
-        
-        String sql = "SELECT COUNT(*) FROM rooms WHERE \"Availability\" = 'Available'";
-        PreparedStatement pst = conn.prepareStatement(sql); 
-        ResultSet rs = pst.executeQuery();
-
-        
-        if (rs.next()) {
-            int count = rs.getInt(1);
-            JOptionPane.showMessageDialog(this, "Количество available rooms: " + count);
-        }
-
-       
-    } catch (Exception e) {
-        JOptionPane.showMessageDialog(this, "Ошибка при подключении к базе: " + e.getMessage());
-    }
-    */ 
